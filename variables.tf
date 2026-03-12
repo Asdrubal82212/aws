@@ -11,9 +11,9 @@ variable "instance_type" {
 }
 
 variable "ami" {
-  description = "AMI para la instancia EC2 (Ubuntu 22.04 us-east-1)"
+  description = "AMI Amazon Linux 2023 us-east-1"
   type        = string
-  default     = "ami-0c02fb55956c7d316"
+  default     = "ami-0c421724a94bba6d6"
 }
 
 variable "project_name" {
