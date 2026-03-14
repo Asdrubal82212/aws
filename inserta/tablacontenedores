@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "=== Insertar en tabla contenedores ==="
+read -p "Nombre del contenedor: " nombre
+
+curl -s -X POST http://3.85.61.243:5000/insertar \
+  -H "Content-Type: application/json" \
+  -d "{\"nombre\": \"$nombre\"}" | python3 -m json.tool
+
+echo "Elemento insertado!"

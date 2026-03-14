@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "=== Eliminar de tabla contenedores ==="
+echo ""
+echo "Consultando elementos disponibles..."
+curl -s http://3.85.61.243:5000/consultar | python3 -m json.tool
+echo ""
+read -p "ID del contenedor a eliminar: " id
+
+curl -s -X DELETE http://3.85.61.243:5000/eliminar/$id | python3 -m json.tool
+echo "Elemento eliminado!"
