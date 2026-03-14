@@ -1,4 +1,5 @@
-echo ".terraform/
+.terraform/
 awscliv2.zip
 aws/
-*.zip" > .gitignore*.pem
+*.zip
+*.pem
